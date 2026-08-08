@@ -885,6 +885,98 @@
       }
     }
   </style>
+  <style>
+    /* ===== FINAL MOBILE OVERFLOW FIX ===== */
+    html {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+
+    img,
+    video,
+    iframe,
+    svg,
+    canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container,
+    section,
+    header,
+    footer,
+    main,
+    nav {
+      max-width: 100%;
+    }
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @media (max-width: 768px) {
+
+      html,
+      body {
+        overflow-x: hidden !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+      }
+
+      body {
+        position: relative;
+      }
+
+      .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      .row {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      input,
+      select,
+      textarea,
+      button {
+        max-width: 100%;
+      }
+
+      .table-responsive,
+      .admin-table-wrap {
+        max-width: 100%;
+        overflow-x: auto;
+      }
+
+      .modal,
+      .modal-dialog,
+      .modal-content {
+        max-width: calc(100vw - 24px) !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
